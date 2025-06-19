@@ -1,0 +1,57 @@
+{
+  "fontFamily": "SquareSansDisplay",
+  "formats": ["woff2"],
+  "styles": [
+    {
+      "style": "normal",
+      "weight": "400",
+      "file": "SquareSansDisplay-Regular.woff2"
+    },
+    {
+      "style": "normal",
+      "weight": "400",
+      "variant": "Condensed",
+      "file": "SquareSansDisplay-RegularCondensed.woff2"
+    },
+    {
+      "style": "normal",
+      "weight": "400",
+      "variant": "Expanded",
+      "file": "SquareSansDisplay-RegularExpanded.woff2"
+    },
+    {
+      "style": "normal",
+      "weight": "500",
+      "file": "SquareSansDisplay-Medium.woff2"
+    },
+    {
+      "style": "normal",
+      "weight": "500",
+      "variant": "Condensed",
+      "file": "SquareSansDisplay-MediumCondensed.woff2"
+    },
+    {
+      "style": "normal",
+      "weight": "500",
+      "variant": "Expanded",
+      "file": "SquareSansDisplay-MediumExpanded.woff2"
+    },
+    {
+      "style": "normal",
+      "weight": "700",
+      "file": "SquareSansDisplay-Bold.woff2"
+    },
+    {
+      "style": "normal",
+      "weight": "700",
+      "variant": "Condensed",
+      "file": "SquareSansDisplay-BoldCondensed.woff2"
+    },
+    {
+      "style": "normal",
+      "weight": "700",
+      "variant": "Expanded",
+      "file": "SquareSansDisplay-BoldExpanded.woff2"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "fontFamily": "SquareSansText",
+  "formats": ["woff2"],
+  "styles": [
+    {
+      "style": "normal",
+      "weight": "400",
+      "file": "SquareSansText-Regular.woff2"
+    },
+    {
+      "style": "italic",
+      "weight": "400",
+      "file": "SquareSansText-Italic.woff2"
+    },
+    {
+      "style": "normal",
+      "weight": "500",
+      "file": "SquareSansText-Medium.woff2"
+    },
+    {
+      "style": "italic",
+      "weight": "500",
+      "file": "SquareSansText-MediumItalic.woff2"
+    },
+    {
+      "style": "normal",
+      "weight": "600",
+      "file": "SquareSansText-SemiBold.woff2"
+    },
+    {
+      "style": "italic",
+      "weight": "600",
+      "file": "SquareSansText-SemiBoldItalic.woff2"
+    },
+    {
+      "style": "normal",
+      "weight": "700",
+      "file": "SquareSansText-Bold.woff2"
+    },
+    {
+      "style": "italic",
+      "weight": "700",
+      "file": "SquareSansText-BoldItalic.woff2"
+    }
+  ]
+}
