@@ -1,10 +1,10 @@
 /*!
- * Square Sans Text Font System
- * Single import for complete font integration
+ * Square Sans Font System - Complete
+ * Single import for both Text and Display variants
  * Usage: @import url('https://squarefonts.vercel.app/index.css');
  */
 
-/* Font Face Definitions */
+/* ===== SQUARE SANS TEXT (Body/UI Font) ===== */
 @font-face {
   font-family: "Square Sans Text";
   src: url("/fonts/Sans/SquareSansText-Regular.woff2") format("woff2");
@@ -69,64 +69,181 @@
   font-display: swap;
 }
 
-/* CSS Custom Properties for easy theming */
+/* ===== SQUARE SANS DISPLAY (Headlines/Large Text) ===== */
+@font-face {
+  font-family: "Square Sans Display";
+  src: url("/fonts/display/SquareSansDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Square Sans Display";
+  src: url("/fonts/display/SquareSansDisplay-RegularCondensed.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: condensed;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Square Sans Display";
+  src: url("/fonts/display/SquareSansDisplay-RegularExpanded.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: expanded;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Square Sans Display";
+  src: url("/fonts/display/SquareSansDisplay-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Square Sans Display";
+  src: url("/fonts/display/SquareSansDisplay-MediumCondensed.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: condensed;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Square Sans Display";
+  src: url("/fonts/display/SquareSansDisplay-MediumExpanded.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: expanded;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Square Sans Display";
+  src: url("/fonts/display/SquareSansDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Square Sans Display";
+  src: url("/fonts/display/SquareSansDisplay-BoldCondensed.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: condensed;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Square Sans Display";
+  src: url("/fonts/display/SquareSansDisplay-BoldExpanded.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: expanded;
+  font-display: swap;
+}
+
+/* ===== CSS CUSTOM PROPERTIES ===== */
 :root {
-  --font-square-sans: "Square Sans Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+  --font-square-sans-text: "Square Sans Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif;
+  --font-square-sans-display: "Square Sans Display", "Square Sans Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+
+  /* Legacy support */
+  --font-square-sans: var(--font-square-sans-text);
 }
 
-/* Utility Classes */
+/* ===== UTILITY CLASSES ===== */
+/* Text Font (Body/UI) */
+.font-square-sans-text {
+  font-family: var(--font-square-sans-text);
+}
+
 .font-square-sans {
-  font-family: var(--font-square-sans);
+  font-family: var(--font-square-sans-text);
 }
 
-.square-sans-text {
-  font-family: var(--font-square-sans);
+/* Display Font (Headlines) */
+.font-square-sans-display {
+  font-family: var(--font-square-sans-display);
 }
 
-/* Auto-apply to common elements (optional - can be overridden) */
+.font-square-sans-display-condensed {
+  font-family: var(--font-square-sans-display);
+  font-stretch: condensed;
+}
+
+.font-square-sans-display-expanded {
+  font-family: var(--font-square-sans-display);
+  font-stretch: expanded;
+}
+
+/* Auto-apply classes */
 body.square-sans-default {
-  font-family: var(--font-square-sans);
+  font-family: var(--font-square-sans-text);
 }
 
-/* Tailwind-style utilities */
-.font-square-sans-normal {
-  font-family: var(--font-square-sans);
+/* Weight + Style combinations for Text */
+.font-square-sans-text-normal {
+  font-family: var(--font-square-sans-text);
   font-weight: 400;
   font-style: normal;
 }
-.font-square-sans-italic {
-  font-family: var(--font-square-sans);
+.font-square-sans-text-italic {
+  font-family: var(--font-square-sans-text);
   font-weight: 400;
   font-style: italic;
 }
-.font-square-sans-medium {
-  font-family: var(--font-square-sans);
+.font-square-sans-text-medium {
+  font-family: var(--font-square-sans-text);
   font-weight: 500;
   font-style: normal;
 }
-.font-square-sans-medium-italic {
-  font-family: var(--font-square-sans);
+.font-square-sans-text-medium-italic {
+  font-family: var(--font-square-sans-text);
   font-weight: 500;
   font-style: italic;
 }
-.font-square-sans-semibold {
-  font-family: var(--font-square-sans);
+.font-square-sans-text-semibold {
+  font-family: var(--font-square-sans-text);
   font-weight: 600;
   font-style: normal;
 }
-.font-square-sans-semibold-italic {
-  font-family: var(--font-square-sans);
+.font-square-sans-text-semibold-italic {
+  font-family: var(--font-square-sans-text);
   font-weight: 600;
   font-style: italic;
 }
-.font-square-sans-bold {
-  font-family: var(--font-square-sans);
+.font-square-sans-text-bold {
+  font-family: var(--font-square-sans-text);
   font-weight: 700;
   font-style: normal;
 }
-.font-square-sans-bold-italic {
-  font-family: var(--font-square-sans);
+.font-square-sans-text-bold-italic {
+  font-family: var(--font-square-sans-text);
   font-weight: 700;
   font-style: italic;
+}
+
+/* Weight combinations for Display */
+.font-square-sans-display-normal {
+  font-family: var(--font-square-sans-display);
+  font-weight: 400;
+  font-style: normal;
+}
+.font-square-sans-display-medium {
+  font-family: var(--font-square-sans-display);
+  font-weight: 500;
+  font-style: normal;
+}
+.font-square-sans-display-bold {
+  font-family: var(--font-square-sans-display);
+  font-weight: 700;
+  font-style: normal;
 }
